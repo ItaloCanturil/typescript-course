@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-labels */
 /* O tipo unknown é usado quando não sabemos qual tipo definir]
 
   Qual a diferença dele para o tipo any?
@@ -13,3 +14,12 @@ let valorVariavel: unknown;
 valorVariavel = 123;
 valorVariavel = 'KOEEEEE';
 valorVariavel = []
+
+// erros de usar o tipo unknown
+
+let anotherVariable: unknown;
+
+anotherVariable: number = 123;
+anotherVariable: string = 'KOEEEEE';
+anotherVariable: boolean = true;
+
